@@ -40,7 +40,7 @@ class CLICommand:
 		elif view_Opt.lower() in ['false', 'f']:
 			view_Opt = False
 		else:
-			raise Exception('Error: Input for viewOpt should be either True or False')
+			raise Exception('Error: Input for "viewORCA opt" should be either True or False')
 
 		# Third, run the method.
 		Run_Method(path_to_images, view_Opt)
