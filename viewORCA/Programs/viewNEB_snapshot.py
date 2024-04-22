@@ -118,7 +118,8 @@ def Run_Method(path_to_images, filename):
 	# 4.5: Save all the NEB optimisation iterations together in one plot
 	ax1.set_xlabel("Displacement (Å)", fontsize=11)
 	ax1.set_ylabel("Energy (eV)", fontsize=11)
-	ax1.set_title( "Iter.: %i to %i" % (0, no_of_iters-1) )
+	ax1.set_title( "Iterations: %i to %i" % (0, no_of_iters-1) )
+	ax2.set_ylabel("Iterations")
 	plt.savefig('neb_optimization.png', dpi=400)
 
 	# 4.6: Close the figure and clear matplotlib
