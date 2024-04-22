@@ -55,12 +55,12 @@ def check_prerequisites(version):
         toString = ''
         toString += '\n'
         toString += '================================================'+'\n'
-        toString += 'This is the Electronic Crystal Calculation Prep Program'+'\n'
+        toString += 'This is the viewORCA Program'+'\n'
         toString += 'Version: '+str(__version__)+'\n'
         toString += '\n'
-        toString += 'The Electronic Crystal Calculation Prep program requires the "packaging" program.'+'\n'
+        toString += 'The viewORCA program requires the "packaging" program.'+'\n'
         toString += '\n'
-        toString += 'Install packaging through pip by following the instruction in https://github.com/GardenGroupUO/ECCP'+'\n'
+        toString += 'Install packaging through pip by following the instruction in https://github.com/geoffreyweal/viewORCA'+'\n'
         toString += 'These instructions will ask you to install packaging by typing the following into your terminal\n'
         toString += '\n'
         toString += 'pip install --user --upgrade packaging\n'
@@ -118,5 +118,67 @@ def check_prerequisites(version):
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+    # Fifth, make sure you have the numpy package
+    packaging_spec = importlib.util.find_spec("numpy")
+    packaging_found = (packaging_spec is not None)
+    if not packaging_found:
+        toString = ''
+        toString += '\n'
+        toString += '================================================'+'\n'
+        toString += 'This is the viewORCA Program'+'\n'
+        toString += 'Version: '+str(__version__)+'\n'
+        toString += '\n'
+        toString += 'The viewORCA program requires the "numpy" program.'+'\n'
+        toString += '\n'
+        toString += 'Install numpy through pip by following the instruction in https://github.com/geoffreyweal/viewORCA'+'\n'
+        toString += 'These instructions will ask you to install numpy by typing the following into your terminal\n'
+        toString += '\n'
+        toString += 'pip install --user --upgrade numpy\n'
+        toString += '\n'
+        toString += 'This program will exit before beginning'+'\n'
+        toString += '================================================'+'\n'
+        raise ImportError(toString)
 
+    # Sixth, make sure you have the matplotlib package
+    packaging_spec = importlib.util.find_spec("scipy")
+    packaging_found = (packaging_spec is not None)
+    if not packaging_found:
+        toString = ''
+        toString += '\n'
+        toString += '================================================'+'\n'
+        toString += 'This is the viewORCA Program'+'\n'
+        toString += 'Version: '+str(__version__)+'\n'
+        toString += '\n'
+        toString += 'The viewORCA program requires the "scipy" program.'+'\n'
+        toString += '\n'
+        toString += 'Install scipy through pip by following the instruction in https://github.com/geoffreyweal/viewORCA'+'\n'
+        toString += 'These instructions will ask you to install scipy by typing the following into your terminal\n'
+        toString += '\n'
+        toString += 'pip install --user --upgrade scipy\n'
+        toString += '\n'
+        toString += 'This program will exit before beginning'+'\n'
+        toString += '================================================'+'\n'
+        raise ImportError(toString)
 
+    # Seventh, make sure you have the matplotlib package
+    packaging_spec = importlib.util.find_spec("matplotlib")
+    packaging_found = (packaging_spec is not None)
+    if not packaging_found:
+        toString = ''
+        toString += '\n'
+        toString += '================================================'+'\n'
+        toString += 'This is the viewORCA Program'+'\n'
+        toString += 'Version: '+str(__version__)+'\n'
+        toString += '\n'
+        toString += 'The viewORCA program requires the "matplotlib" program.'+'\n'
+        toString += '\n'
+        toString += 'Install matplotlib through pip by following the instruction in https://github.com/geoffreyweal/viewORCA'+'\n'
+        toString += 'These instructions will ask you to install matplotlib by typing the following into your terminal\n'
+        toString += '\n'
+        toString += 'pip install --user --upgrade matplotlib\n'
+        toString += '\n'
+        toString += 'This program will exit before beginning'+'\n'
+        toString += '================================================'+'\n'
+        raise ImportError(toString)
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
