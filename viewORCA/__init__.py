@@ -2,7 +2,7 @@
 from viewORCA.check_prerequisites import check_prerequisites
 
 __name__    = 'viewORCA'
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 __author__  = 'Dr. Geoffrey Weal'
 check_prerequisites(__version__)
 __author_email__ = 'geoffrey.weal@vuw.ac.nz'
