@@ -36,3 +36,7 @@ Any feedback would be amazing and appreciated!
 
 Thanks!
 
+## Acknowledgements
+
+The ``viewORCA neb_snap`` module is an adaptation of [neb_snapshots.py](https://github.com/via9a/neb_visualize.py) by Vilhjálmur Ásgeirsson and Benedikt Orri Birgirsson of the Universiy of Iceland. 
+
