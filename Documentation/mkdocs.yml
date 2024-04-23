@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2024 <a href="https://github.com/geoffreyweal"  targ
 theme:
   name: material
   features:
-    - navigation.tabs
+    #- navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
