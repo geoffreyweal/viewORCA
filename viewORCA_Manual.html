@@ -1,0 +1,1152 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The program is designed to allow the user to easily view the results from their ORCA calculations.">
+      
+      
+        <meta name="author" content="Geoffrey Weal">
+      
+      
+        <link rel="canonical" href="https://github.com/geoffreyweal/viewORCA/viewORCA_Manual.html">
+      
+      
+        <link rel="prev" href="Installation.html">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>viewORCA Manual - viewORCA</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="viewORCA Manual - viewORCA" >
+      
+        <meta  property="og:description"  content="The program is designed to allow the user to easily view the results from their ORCA calculations." >
+      
+        <meta  property="og:image"  content="https://github.com/geoffreyweal/viewORCA/assets/images/social/viewORCA_Manual.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://github.com/geoffreyweal/viewORCA/viewORCA_Manual.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="viewORCA Manual - viewORCA" >
+      
+        <meta  name="twitter:description"  content="The program is designed to allow the user to easily view the results from their ORCA calculations." >
+      
+        <meta  name="twitter:image"  content="https://github.com/geoffreyweal/viewORCA/assets/images/social/viewORCA_Manual.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#vieworca-manual" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="viewORCA" class="md-header__button md-logo" aria-label="viewORCA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            viewORCA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              viewORCA Manual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-1h-4m2-13a5.002 5.002 0 0 0-3 9v2c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-2a4.997 4.997 0 0 0 1-7c-.94-1.26-2.43-2-4-2m1 7.82V17h-2v-2.18A3 3 0 0 1 11.17 11 3.003 3.003 0 0 1 15 9.16c1.56.56 2.38 2.27 1.83 3.84-.3.85-.98 1.5-1.83 1.82M7.68 15H7v1c0 .55.45 1 1 1h1v-.12c-.54-.55-1-1.18-1.32-1.88M13.6 5C12.5 2.47 9.53 1.33 7 2.45S3.34 6.5 4.45 9.04c.34.77.88 1.46 1.55 1.96v2c0 .55.45 1 1 1h.3c-.2-.65-.3-1.32-.3-2 0-3.71 2.89-6.79 6.6-7"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/geoffreyweal/viewORCA" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    geoffreyweal/viewORCA
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Installation.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Installation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="viewORCA_Manual.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  viewORCA Manual
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="viewORCA" class="md-nav__button md-logo" aria-label="viewORCA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    viewORCA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/geoffreyweal/viewORCA" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    geoffreyweal/viewORCA
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Installation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    viewORCA Manual
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="viewORCA_Manual.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    viewORCA Manual
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-opt-view-geometric-optimisation-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA opt: View Geometric Optimisation Calculation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-scan-view-scan-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA scan: View SCAN Calculation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-neb-view-nudged-elastic-band-neb-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA neb: View Nudged Elastic Band (NEB) Calculation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-neb_snap-view-neb-optimisation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA neb_snap: View NEB Optimisation Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-irc-view-intrinsic-reaction-coordinate-irc-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA irc: View Intrinsic Reaction Coordinate (IRC) Calculation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-multi-obtain-possible-electron-multiplicities-for-your-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA multi: Obtain Possible Electron Multiplicities for your System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-move_com-move-the-centre-of-mass-of-your-chemical-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA move_com: Move the Centre-of-Mass of your Chemical System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vieworca-combine-combine-several-chemical-systems-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      viewORCA Combine: Combine Several Chemical Systems Together
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="vieworca-manual"><code>viewORCA</code> Manual<a class="headerlink" href="#vieworca-manual" title="Permanent link">&para;</a></h1>
+<p>There are several modules available for viewing ORCA calculations. This webpage describes all the modules available in <code>viewORCA</code>:</p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>You can view all the module available in <code>viewORCA</code> by typing <code>viewORCA --help</code> into the terminal:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>username@computer<span class="w"> </span>name<span class="w"> </span>Desktop<span class="w"> </span>%<span class="w"> </span>viewORCA<span class="w"> </span>--help<span class="w">        </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>usage:<span class="w"> </span>viewORCA<span class="w"> </span><span class="o">[</span>-h<span class="o">]</span><span class="w"> </span><span class="o">[</span>-T<span class="o">]</span><span class="w"> </span><span class="o">{</span>help,opt,scan,neb,neb_snap,irc,multi,move_com,combine<span class="o">}</span><span class="w"> </span>...
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Program<span class="w"> </span><span class="k">for</span><span class="w"> </span>viewing<span class="w"> </span><span class="nb">jobs</span><span class="w"> </span>from<span class="w"> </span>ORCA
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>optional<span class="w"> </span>arguments:
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span>-h,<span class="w"> </span>--help<span class="w">            </span>show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span><span class="nb">exit</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span>-T,<span class="w"> </span>--traceback
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Sub-commands:
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="o">{</span>help,opt,scan,neb,neb_snap,irc,multi,move_com,combine<span class="o">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nb">help</span><span class="w">                </span>Help<span class="w"> </span><span class="k">for</span><span class="w"> </span>sub-command.
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span>opt<span class="w">                 </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>the<span class="w"> </span>output<span class="w"> </span>of<span class="w"> </span>an<span class="w"> </span>ORCA<span class="w"> </span>geometric<span class="w"> </span>optimisation<span class="w"> </span>job<span class="w"> </span>visually.
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span>scan<span class="w">                </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>the<span class="w"> </span>output<span class="w"> </span>of<span class="w"> </span>an<span class="w"> </span>ORCA<span class="w"> </span>SCAN<span class="w"> </span>job<span class="w"> </span>visually.
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span>neb<span class="w">                 </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>the<span class="w"> </span>output<span class="w"> </span>of<span class="w"> </span>an<span class="w"> </span>ORCA<span class="w"> </span>Nudged<span class="w"> </span>Elastic<span class="w"> </span>Band<span class="w"> </span><span class="o">(</span>NEB<span class="o">)</span><span class="w"> </span>job<span class="w"> </span>visually.
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span>neb_snap<span class="w">            </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>the<span class="w"> </span>progress<span class="w"> </span>of<span class="w"> </span>an<span class="w"> </span>ORCA<span class="w"> </span>Nudged<span class="w"> </span>Elastic<span class="w"> </span>Band<span class="w"> </span><span class="o">(</span>NEB<span class="o">)</span><span class="w"> </span>job<span class="w"> </span><span class="o">(</span>as<span class="w"> </span>it<span class="w"> </span>is<span class="w"> </span>running<span class="w"> </span>or<span class="w"> </span>after<span class="w"> </span>it<span class="w"> </span>has<span class="w"> </span>run<span class="o">)</span><span class="w"> </span>by<span class="w"> </span>viewing<span class="w"> </span>the
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                        </span>energy<span class="w"> </span>profiles<span class="w"> </span>of<span class="w"> </span>all<span class="w"> </span>the<span class="w"> </span>iterations<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>NEB<span class="w"> </span>optimisation<span class="w"> </span>job.
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span>irc<span class="w">                 </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>view<span class="w"> </span>the<span class="w"> </span>output<span class="w"> </span>of<span class="w"> </span>an<span class="w"> </span>ORCA<span class="w"> </span>Intrinsic<span class="w"> </span>Reaction<span class="w"> </span>Coordinate<span class="w"> </span><span class="o">(</span>IRC<span class="o">)</span><span class="w"> </span>job<span class="w"> </span>visually.
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span>multi<span class="w">               </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>obtain<span class="w"> </span>the<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>of<span class="w"> </span>interest,<span class="w"> </span>and<span class="w"> </span>therefore<span class="w"> </span>obtain<span class="w"> </span>the<span class="w"> </span>possible<span class="w"> </span>multiplicities<span class="w"> </span>that<span class="w"> </span>the
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                        </span>system<span class="w"> </span>could<span class="w"> </span>be<span class="w"> </span><span class="k">in</span>.
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span>move_com<span class="w">            </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>move<span class="w"> </span>the<span class="w"> </span>centre<span class="w"> </span>of<span class="w"> </span>mass<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>system.
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span>combine<span class="w">             </span>This<span class="w"> </span>module<span class="w"> </span>allows<span class="w"> </span>the<span class="w"> </span>user<span class="w"> </span>to<span class="w"> </span>combine<span class="w"> </span>a<span class="w"> </span><span class="nb">set</span><span class="w"> </span>of<span class="w"> </span>chemical<span class="w"> </span>systems<span class="w"> </span>together.
+</span></code></pre></div>
+</details>
+<h2 id="vieworca-opt-view-geometric-optimisation-calculation"><code>viewORCA opt</code>: View Geometric Optimisation Calculation<a class="headerlink" href="#vieworca-opt-view-geometric-optimisation-calculation" title="Permanent link">&para;</a></h2>
+<p>This module is designed to allow the user to view the output of an ORCA geometric optimisation job visually. </p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing your geometric optimisation job, and </li>
+<li>type <code>viewORCA opt</code> into the terminal. </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># First, change directory into the folder containing your ORCA geometric optimisation job.</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_geometric_optimisation_job
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Second, run &quot;viewORCA opt&quot;.</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>viewORCA<span class="w"> </span>opt
+</span></code></pre></div>
+<p><code>viewORCA opt</code> will extract information from the <code>ORCA_INPUT_FILENAME_trj.xyz</code> file and show the images of the optimisation, along with the energy profile of the optimisation. </p>
+<ul>
+<li>For this reason, you <strong>MUST</strong> have the <code>ORCA_INPUT_FILENAME_trj.xyz</code> file in your geometric optimisation folder for <code>viewORCA opt</code> to work.</li>
+<li>The prefix <code>ORCA_INPUT_FILENAME</code> is the same prefix you gave to your ORCA input file (being <code>ORCA_INPUT_FILENAME.inp</code>). </li>
+</ul>
+<p>This program will also create an xyz file called <code>ORCA_INPUT_FILENAME_OPT_images.xyz</code> that contains the images and the energy profile from the optimisation. </p>
+<ul>
+<li>
+<p>You can view this by typing <code>ase gui ORCA_INPUT_FILENAME_OPT_images.xyz</code> into the terminal.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ase<span class="w"> </span>gui<span class="w"> </span>ORCA_INPUT_FILENAME_OPT_images.xyz
+</span></code></pre></div>
+</li>
+</ul>
+<p>Optional inputs for <code>viewORCA opt</code> include:</p>
+<ul>
+<li><code>--path</code>: This is the path to the folder containing the ORCA optimisation calculation. If not given, the default path is the current directory you are in. </li>
+<li><code>--view</code>: If tag indicates if you want to view the ASE GUI for the optimisation job immediate after this program has run. By default this is <code>True</code>. If you only want to create the <code>ORCA_INPUT_FILENAME_OPT_images.xyz</code> file and not view it immediately, set this to <code>False</code>.<ul>
+<li>Setting this to <code>False</code> is ideal if you are running <code>viewORCA</code> on an HPC, where <code>ase gui</code> windows may be more responsive if <code>ase gui</code> is run from your own computer rather than directly on the HPC. </li>
+<li>You can view <code>ORCA_INPUT_FILENAME_OPT_images.xyz</code> on your computer by typing the following into the terminal: <code>ase gui ORCA_INPUT_FILENAME_OPT_images.xyz</code>.</li>
+</ul>
+</li>
+</ul>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>An example of a geometric optimisation viewed using <code>viewORCA opt</code> is shown below, along with the energy profile for this optimisation. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_opt">Examples/viewORCA_opt</a></p>
+<p><figure markdown="span">
+<img src="Figures/view_ORCA_Manual/opt/optimisation.gif?raw=true" alt="NEB Images from a geometric optimisation" width="600"/>
+<figcaption>NEB Images from a geometric optimisation</figcaption>
+</figure></p>
+<p>The energy profile for this example is given below:</p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/opt/energy_profile.png?raw=true" alt="Energy Profile from a geometric optimisation" width="600"/>
+    <figcaption>Energy Profile from a geometric optimisation</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-scan-view-scan-calculation"><code>viewORCA scan</code>: View SCAN Calculation<a class="headerlink" href="#vieworca-scan-view-scan-calculation" title="Permanent link">&para;</a></h2>
+<p>This module is designed to allow the user to view the output of an ORCA SCAN job visually. </p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing your SCAN job, and </li>
+<li>type <code>viewORCA scan</code> into the terminal. </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># First, change directory into the folder containing your ORCA SCAN job.</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_SCAN_job
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Second, run &quot;viewORCA scan&quot;.</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>viewORCA<span class="w"> </span>scan
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you needed to restart your SCAN calculation part-way though the calculation for some reason and have multiple SCAN calculations that consectively run one after the other, you can run these sets of calculations together through <code>viewORCA scan</code></p>
+<ul>
+<li><code>viewORCA scan</code> will cellotape these calculations together so you can see the SCAN images together, and the full energy profile in one plot.</li>
+</ul>
+<p>To use <code>viewORCA scan</code> in this way, make sure that your SCAN jobs are placed in separate folders called <code>SCAN_1</code>, <code>SCAN_2</code>, <code>SCAN_3</code>, so on and so on. <code>viewORCA scan</code> will paste these together in numerical order of these folders.</p>
+<ul>
+<li><a href="https://geoffreyweal.github.io/ORCA_Mechanism_Procedure/Step_2_Examine_Reaction_Pathway/Step_2Ba_The_SCAN_Method.html#what-should-i-do-if-i-need-to-restart-a-scan-run">Click here to learn more about this from the <strong>Procedure for Investigating Chemical Mechanisms with ORCA</strong> tutorial</a>. </li>
+</ul>
+</div>
+<p><code>viewORCA scan</code> will show the images of the SCAN calculation, along with the energy profile of the SCAN calculation. </p>
+<ul>
+<li>
+<p>This program will also create an xyz file called <code>SCAN_images.xyz</code> that contains the images and the energy profile from the SCAN calculation. You can view this by typing <code>ase gui SCAN_images.xyz</code> into the terminal.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ase<span class="w"> </span>gui<span class="w"> </span>SCAN_images.xyz
+</span></code></pre></div>
+</li>
+</ul>
+<p>Optional inputs for <code>viewORCA scan</code> include:</p>
+<ul>
+<li><code>--path</code>: This is the path to the folder containing the ORCA SCAN calculation. If not given, the default path is the current directory you are in. </li>
+<li><code>--view</code>: If tag indicates if you want to view the ASE GUI for the SCAN job immediate after this program has run. By default this is <code>True</code>. If you only want to create the <code>SCAN_images.xyz</code> file and not view it immediately, set this to <code>False</code>.<ul>
+<li>Setting this to <code>False</code> is ideal if you are running <code>viewORCA</code> on an HPC, where <code>ase gui</code> windows may be more responsive if <code>ase gui</code> is run from your own computer rather than directly on the HPC. </li>
+<li>You can view <code>SCAN_images.xyz</code> on your computer by typing the following into the terminal: <code>ase gui SCAN_images.xyz</code>.</li>
+</ul>
+</li>
+</ul>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>An example of a SCAN calculation viewed using <code>viewORCA scan</code> is shown below, along with the energy profile for this SCAN calculation. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_scan">Examples/viewORCA_scan</a></p>
+<p><figure markdown="span">
+<img src="Figures/view_ORCA_Manual/scan/SCAN_example.gif?raw=true" alt="NEB Images from a SCAN calculation" width="600"/>
+<figcaption>NEB Images from a SCAN calculation</figcaption>
+</figure></p>
+<p>The energy profile for this example is given below:</p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/scan/SCAN_energy.png?raw=true" alt="Energy Profile from a SCAN calculation" width="600"/>
+    <figcaption>Energy Profile from a SCAN calculation</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-neb-view-nudged-elastic-band-neb-calculation"><code>viewORCA neb</code>: View Nudged Elastic Band (NEB) Calculation<a class="headerlink" href="#vieworca-neb-view-nudged-elastic-band-neb-calculation" title="Permanent link">&para;</a></h2>
+<p>This module is designed to allow the user to view the output of an ORCA NEB job visually. </p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing your NEB job, and </li>
+<li>type <code>viewORCA neb</code> into the terminal. </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># First, change directory into the folder containing your ORCA NEB job.</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_NEB_job
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Second, run &quot;viewORCA neb&quot;.</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>viewORCA<span class="w"> </span>neb
+</span></code></pre></div>
+<p><code>viewORCA neb</code> will extract information from the <code>ORCA_INPUT_FILENAME_MEP_trj.xyz</code> file and show the images of the NEB calculation, along with the energy profile of the NEB calculation. </p>
+<ul>
+<li>For this reason, you <strong>MUST</strong> have the <code>ORCA_INPUT_FILENAME_MEP_trj.xyz</code> file in your NEB calculation folder for <code>viewORCA neb</code> to work.</li>
+<li>The prefix <code>ORCA_INPUT_FILENAME</code> is the same prefix you gave to your ORCA input file (being <code>ORCA_INPUT_FILENAME.inp</code>). </li>
+</ul>
+<p>This program will also create an xyz file called <code>ORCA_INPUT_FILENAME_NEB_images.xyz</code> that contains the images and the energy profile from the NEB calculation. </p>
+<ul>
+<li>
+<p>You can view this by typing <code>ase gui ORCA_INPUT_FILENAME_NEB_images.xyz</code> into the terminal.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ase<span class="w"> </span>gui<span class="w"> </span>ORCA_INPUT_FILENAME_NEB_images.xyz
+</span></code></pre></div>
+</li>
+</ul>
+<p>Optional inputs for <code>viewORCA neb</code> include:</p>
+<ul>
+<li><code>--path</code>: This is the path to the folder containing the ORCA NEB calculation. If not given, the default path is the current directory you are in. </li>
+<li><code>--view</code>: If tag indicates if you want to view the ASE GUI for the NEB job immediate after this program has run. By default this is <code>True</code>. If you only want to create the <code>ORCA_INPUT_FILENAME_NEB_images.xyz</code> file and not view it immediately, set this to <code>False</code>.<ul>
+<li>Setting this to <code>False</code> is ideal if you are running <code>viewORCA</code> on an HPC, where <code>ase gui</code> windows may be more responsive if <code>ase gui</code> is run from your own computer rather than directly on the HPC. </li>
+<li>You can view <code>ORCA_INPUT_FILENAME_NEB_images.xyz</code> on your computer by typing the following into the terminal: <code>ase gui ORCA_INPUT_FILENAME_NEB_images.xyz</code>.</li>
+</ul>
+</li>
+</ul>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>An example of a NEB calculation viewed using <code>viewORCA neb</code> is shown below, along with the energy profile for this NEB calculation. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_neb_and_neb_snap">Examples/viewORCA_neb_and_neb_snap</a></p>
+<p><figure markdown="span">
+<img src="Figures/view_ORCA_Manual/neb/NEB_example.gif?raw=true" alt="NEB Images from a NEB calculation" width="500"/>
+<figcaption>NEB Images from a NEB calculation</figcaption>
+</figure></p>
+<p>The energy profile for this example is given below:</p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/neb/NEB_energy.png?raw=true" alt="Energy Profile from a NEB calculation" width="600"/>
+    <figcaption>Energy Profile from a NEB calculation</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-neb_snap-view-neb-optimisation-process"><code>viewORCA neb_snap</code>: View NEB Optimisation Process<a class="headerlink" href="#vieworca-neb_snap-view-neb-optimisation-process" title="Permanent link">&para;</a></h2>
+<p>This module is designed to allow the user to view the energy profile of all the iterations performed during the NEB optimisation process. This module is an adaptation of <a href="https://github.com/via9a/neb_visualize.py">neb_snapshots.py</a> by Vilhjálmur Ásgeirsson and Benedikt Orri Birgirsson of the Universiy of Iceland. </p>
+<ul>
+<li>It is helpful to view this as your NEB calculation is running to check if there are any issues occurring as ORCA us running the NEB calculation. </li>
+</ul>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing your NEB job, and </li>
+<li>type <code>viewORCA neb_snap</code> into the terminal. </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># First, change directory into the folder containing your ORCA NEB job.</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_NEB_job
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># Second, run &quot;viewORCA neb_snap&quot;.</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>viewORCA<span class="w"> </span>neb_snap
+</span></code></pre></div>
+<p><code>viewORCA neb_snap</code> will extract information from the <code>ORCA_INPUT_FILENAME.interp</code> file and create plots of the energy profiles of all the iterations of the NEB optimisation process. </p>
+<ul>
+<li>For this reason, you <strong>MUST</strong> have the <code>ORCA_INPUT_FILENAME.interp</code> file in your NEB calculation folder for <code>viewORCA neb_snap</code> to work.</li>
+<li>The prefix <code>ORCA_INPUT_FILENAME</code> is the same prefix you gave to your ORCA input file (being <code>ORCA_INPUT_FILENAME.inp</code>). </li>
+</ul>
+<p><code>viewORCA neb_snap</code> will create two png files containing the energy profiles of the NEB calculation:</p>
+<ul>
+<li><code>ORCA_INPUT_FILENAME_NEB_optimization.png</code>: This plot displays the NEB energy profiles of all iterations performed during the NEB optimisation process. </li>
+<li><code>ORCA_INPUT_FILENAME_NEB_last_iteration.png</code>: This plot shows the energy profile of the last iteration performed from the NEB optimisation process. </li>
+</ul>
+<p>Optional inputs for <code>viewORCA neb_snap</code> include:</p>
+<ul>
+<li><code>--path</code>: This is the path to the folder containing the ORCA NEB calculation. If not given, the default path is the current directory you are in. <ul>
+<li>You can also provide the path to the <code>.interp</code> file you want to process if you want to process a specific <code>.interp</code> file of interest. This file must end with the <code>.interp</code> suffix. </li>
+</ul>
+</li>
+</ul>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>An example of a NEB optimisation calculation viewed using <code>viewORCA neb_snap</code> is shown below, along with the energy profile of the last iteration for this NEB calculation. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_neb_and_neb_snap">Examples/viewORCA_neb_and_neb_snap</a></p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/neb_snap/orca_NEB_optimization.png?raw=true" alt="ORCA_INPUT_FILENAME_NEB_optimization.png" width="600"/>
+    <figcaption>Energy Profile of each NEB optimisation iteration performed by ORCA. This is given by the 'ORCA_INPUT_FILENAME_NEB_optimization.png' file.</figcaption>
+</figure></p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/neb_snap/orca_NEB_last_iteration.png?raw=true" alt="ORCA_INPUT_FILENAME_NEB_last_iteration.png" width="600"/>
+    <figcaption>Energy Profile of each NEB optimisation iteration performed by ORCA. This is given by the 'ORCA_INPUT_FILENAME_NEB_last_iteration.png' file.</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-irc-view-intrinsic-reaction-coordinate-irc-calculation"><code>viewORCA irc</code>: View Intrinsic Reaction Coordinate (IRC) Calculation<a class="headerlink" href="#vieworca-irc-view-intrinsic-reaction-coordinate-irc-calculation" title="Permanent link">&para;</a></h2>
+<p>This module is designed to allow the user to view the output of an ORCA IRC job visually. </p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing your IRC job, and </li>
+<li>type <code>viewORCA irc</code> into the terminal. </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># First, change directory into the folder containing your ORCA IRC job.</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_geometric_optimisation_job
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Second, run &quot;viewORCA irc&quot;.</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>viewORCA<span class="w"> </span>irc
+</span></code></pre></div>
+<p><code>viewORCA irc</code> will extract information from the <code>ORCA_INPUT_FILENAME_IRC_Full_trj.xyz</code> file and show the images of the IRC calculation, along with the energy profile of the IRC calculation. </p>
+<ul>
+<li>For this reason, you <strong>MUST</strong> have the <code>ORCA_INPUT_FILENAME_IRC_Full_trj.xyz</code> file in your NEB calculation folder for <code>viewORCA neb</code> to work.</li>
+<li>The prefix <code>ORCA_INPUT_FILENAME</code> is the same prefix you gave to your ORCA input file (being <code>ORCA_INPUT_FILENAME.inp</code>). </li>
+</ul>
+<p>This program will also create an xyz file called <code>ORCA_INPUT_FILENAME_IRC_images.xyz</code> that contains the images and the energy profile from the IRC calculation. </p>
+<ul>
+<li>
+<p>You can view this by typing <code>ase gui ORCA_INPUT_FILENAME_IRC_images.xyz</code> into the terminal</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ase<span class="w"> </span>gui<span class="w"> </span>ORCA_INPUT_FILENAME_IRC_images.xyz
+</span></code></pre></div>
+</li>
+</ul>
+<p>Optional inputs for <code>viewORCA irc</code> include:</p>
+<ul>
+<li><code>--path</code>: This is the path to the folder containing the ORCA IRC calculation. If not given, the default path is the current directory you are in. </li>
+<li><code>--view</code>: If tag indicates if you want to view the ASE GUI for the IRC job immediate after this program has run. By default this is <code>True</code>. If you only want to create the <code>SCAN_images.xyz</code> file and not view it immediately, set this to <code>False</code>.<ul>
+<li>Setting this to <code>False</code> is ideal if you are running <code>viewORCA</code> on an HPC, where <code>ase gui</code> windows may be more responsive if <code>ase gui</code> is run from your own computer rather than directly on the HPC. </li>
+<li>You can view <code>ORCA_INPUT_FILENAME_IRC_images.xyz</code> on your computer by typing the following into the terminal: <code>ase gui ORCA_INPUT_FILENAME_IRC_images.xyz</code>.</li>
+</ul>
+</li>
+</ul>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>An example of a IRC calculation viewed using <code>viewORCA irc</code> is shown below, along with the energy profile for this IRC calculation. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_irc">Examples/viewORCA_irc</a></p>
+<p><figure markdown="span">
+<img src="Figures/view_ORCA_Manual/irc/IRC_example.gif?raw=true" alt="NEB Images from a IRC calculation" width="500"/>
+<figcaption>NEB Images from a IRC calculation</figcaption>
+</figure></p>
+<p>The energy profile for this example is given below:</p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/irc/IRC_energy_original.png?raw=true" alt="Energy Profile from a IRC calculation" width="600"/>
+    <figcaption>Energy Profile from a IRC calculation</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-multi-obtain-possible-electron-multiplicities-for-your-system"><code>viewORCA multi</code>: Obtain Possible Electron Multiplicities for your System<a class="headerlink" href="#vieworca-multi-obtain-possible-electron-multiplicities-for-your-system" title="Permanent link">&para;</a></h2>
+<p>One of the inputs that you need to give to your ORCA input <code>.inp</code> file is the multiplicity of the system. The multiplicity indicates the total electron spin of your system. The value of the muliticity is based on the number of electrons are in your system, where the multiplicity is based on the <span class="arithmatex">\(M = 2S + 1\)</span> rule: </p>
+<ul>
+<li>If you have an <strong>even</strong> number of electrons in your system, the multiplicity will be an <strong>odd</strong> number. The lowest value multiplicity is 1.</li>
+<li>If you have an <strong>odd</strong>  number of electrons in your system, the multiplicity will be an <strong>even</strong> number. The lowest value multiplicity is 2 (It can not be 0).</li>
+</ul>
+<p>If you want to easily figure out if you should have an even or odd multiplicity, the <code>viewORCA multi</code> will determine the number of electrons your system has, and from this indicate if your multiplicity will be even or odd.</p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing your geometric optimisation job, and </li>
+<li>
+<p>type <code>viewORCA multi filepath --charge=charge</code> into the terminal, where:</p>
+<ul>
+<li><code>filepath</code> is the path to the <code>xyz</code> file of your system, and </li>
+<li><code>--charge</code> is the overall charge of your system (if <code>--charge</code> is not given, the default given is 0).</li>
+</ul>
+</li>
+</ol>
+<details class="example" open="open">
+<summary>Example 1: Cu(I)-Benzylamine</summary>
+<p>Cu(II)-Benzylimion (with a missing hydrogen and having a charge of +1) contains 86 electrons, so it can have an odd multiplicity. For Cu(I) systems, the ground spin state multiplicity is 1. See the xyz file for Cu(II)-Benzylimion in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_multi/Example_1/Cu_I-Benzylamine.xyz">Examples/viewORCA_multi/Example_1</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>username@computer:username/Desktop$<span class="w"> </span>viewORCA<span class="w"> </span>multi<span class="w"> </span>Cu_I-Benzylamine.xyz<span class="w"> </span>--charge<span class="o">=</span><span class="m">1</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>Cu_I-Benzylamine.xyz<span class="w"> </span>is:<span class="w"> </span><span class="m">86</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>The<span class="w"> </span>total<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>is<span class="w"> </span>even.
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>The<span class="w"> </span>multiplicity<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>an<span class="w"> </span>odd<span class="w"> </span>number<span class="w"> </span>greater<span class="w"> </span>than<span class="w"> </span>or<span class="w"> </span>equal<span class="w"> </span>to<span class="w"> </span><span class="m">1</span><span class="w"> </span>based<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nv">M</span><span class="o">=</span>2S+1<span class="w"> </span>rule.<span class="w"> </span>Examples:<span class="w"> </span><span class="m">1</span>,3,5,7,9,11,..<span class="w"> </span>
+</span></code></pre></div>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/multi/Example_1.png?raw=true#only-light" alt="Example_1.png" width="400"/>
+    <img src="Figures/view_ORCA_Manual/multi/Example_1_Dark.png?raw=true#only-dark" alt="Example_1.png" width="400"/>
+    <figcaption>Left: Image of Cu(I)-Benzylamine. Right: 3d orbital diagram of octahedral Cu(I).</figcaption>
+</figure></p>
+</details>
+<details class="example" open="open">
+<summary>Example 2: Cu(II)-Benzylimion</summary>
+<p>Cu(II)-Benzylimion (with a missing hydrogen and having a charge of +1) contains 83 electrons, so it can have an even multiplicity. For Cu(II) systems, the ground spin state multiplicity is 2. See the xyz file for Cu(II)-Benzylimion in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_multi/Example_2/Cu_II-BnzImine_1+.xyz">Examples/viewORCA_multi/Example_2</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>username@computer:username/Desktop$<span class="w"> </span>viewORCA<span class="w"> </span>multi<span class="w"> </span>Cu_II-BnzImine_1+.xyz<span class="w"> </span>--charge<span class="o">=</span>+1
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>Number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>Cu-BnzImine_1+.xyz<span class="w"> </span>is:<span class="w"> </span><span class="m">83</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>The<span class="w"> </span>total<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>is<span class="w"> </span>odd.
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>The<span class="w"> </span>multiplicity<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>an<span class="w"> </span>even<span class="w"> </span>number<span class="w"> </span>greater<span class="w"> </span>than<span class="w"> </span>or<span class="w"> </span>equal<span class="w"> </span>to<span class="w"> </span><span class="m">2</span><span class="w"> </span>based<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nv">M</span><span class="o">=</span>2S+1<span class="w"> </span>rule.<span class="w"> </span>Examples:<span class="w"> </span><span class="m">2</span>,4,6,8,10,12,..
+</span></code></pre></div>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/multi/Example_2.png?raw=true#only-light" alt="Example_2.png" width="400"/>
+    <img src="Figures/view_ORCA_Manual/multi/Example_2_Dark.png?raw=true#only-dark" alt="Example_2.png" width="400"/>
+    <figcaption>Left: Image of Cu(II)-Benzylimion. Right: 3d orbital diagram of octahedral Cu(II).</figcaption>
+</figure></p>
+</details>
+<details class="example">
+<summary>Example 3: Benzylamine</summary>
+<p>Benzylamine contains 58 electrons, so it can have an odd multiplicity. For organic systems, the ground spin state multiplicity is 1. See the xyz file for Benzylamine in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_multi/Example_3/Benzylamine.xyz">Examples/viewORCA_multi/Example_3</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>username@computer:username/Desktop$<span class="w"> </span>viewORCA<span class="w"> </span>multi<span class="w"> </span>Benzylamine.xyz<span class="w"> </span>--charge<span class="o">=</span><span class="m">0</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>Benzylamine.xyz<span class="w"> </span>is:<span class="w"> </span><span class="m">58</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>The<span class="w"> </span>total<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>is<span class="w"> </span>even.
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>The<span class="w"> </span>multiplicity<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>an<span class="w"> </span>odd<span class="w"> </span>number<span class="w"> </span>greater<span class="w"> </span>than<span class="w"> </span>or<span class="w"> </span>equal<span class="w"> </span>to<span class="w"> </span><span class="m">1</span><span class="w"> </span>based<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nv">M</span><span class="o">=</span>2S+1<span class="w"> </span>rule.<span class="w"> </span>Examples:<span class="w"> </span><span class="m">1</span>,3,5,7,9,11,..
+</span></code></pre></div>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/multi/Example_3.png?raw=true#only-light" alt="Example_3.png" width="120"/>
+    <img src="Figures/view_ORCA_Manual/multi/Example_3_Dark.png?raw=true#only-dark" alt="Example_3.png" width="120"/>
+    <figcaption>Image of Benzylamine.</figcaption>
+</figure></p>
+</details>
+<details class="example">
+<summary>Example 4: Cu(II)-Benzylimine</summary>
+<p>Cu(II)-Benzylimine contains 83 electrons, so it can have an even multiplicity. For Cu(II) systems, the ground spin state multiplicity is 2. See the xyz file for Cu(II)-Benzylimine in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_multi/Example_4/Cu_II-BnzImine-H_2+.xyz">Examples/viewORCA_multi/Example_4</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>username@computer:username/Desktop$<span class="w"> </span>viewORCA<span class="w"> </span>multi<span class="w"> </span>Cu_II-BnzImine-H_2+.xyz<span class="w"> </span>--charge<span class="o">=</span>+2
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>Cu-BnzImine-H_2+.xyz<span class="w"> </span>is:<span class="w"> </span><span class="m">83</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>The<span class="w"> </span>total<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>is<span class="w"> </span>odd.
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>The<span class="w"> </span>multiplicity<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>an<span class="w"> </span>even<span class="w"> </span>number<span class="w"> </span>greater<span class="w"> </span>than<span class="w"> </span>or<span class="w"> </span>equal<span class="w"> </span>to<span class="w"> </span><span class="m">2</span><span class="w"> </span>based<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nv">M</span><span class="o">=</span>2S+1<span class="w"> </span>rule.<span class="w"> </span>Examples:<span class="w"> </span><span class="m">2</span>,4,6,8,10,12,..
+</span></code></pre></div>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/multi/Example_4.png?raw=true#only-light" alt="Example_4.png" width="400"/>
+    <img src="Figures/view_ORCA_Manual/multi/Example_4_Dark.png?raw=true#only-dark" alt="Example_4.png" width="400"/>
+    <figcaption>Left: Image of Cu(II)-Benzylimine. Right: 3d orbital diagram of octahedral Cu(II).</figcaption>
+</figure></p>
+</details>
+<details class="example">
+<summary>Example 5: Benzylamion anion</summary>
+<p>Benzylamion anion (with a missing hydrogen and having a charge of -1) contains 58 electrons, so it can have an even multiplicity. For organic systems, the ground spin state multiplicity is 1. See the xyz file for Benzylamion anion in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_multi/Example_5/Benzyl-NH_1-.xyz">Examples/viewORCA_multi/Example_5</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>username@computer:username/Desktop$<span class="w"> </span>viewORCA<span class="w"> </span>multi<span class="w"> </span>Benzyl-NH_1-.xyz<span class="w"> </span>--charge<span class="o">=</span>-1
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>Benzyl-NH_1-.xyz<span class="w"> </span>is:<span class="w"> </span><span class="m">58</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>The<span class="w"> </span>total<span class="w"> </span>number<span class="w"> </span>of<span class="w"> </span>electrons<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>system<span class="w"> </span>is<span class="w"> </span>even.
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>The<span class="w"> </span>multiplicity<span class="w"> </span>can<span class="w"> </span>be<span class="w"> </span>an<span class="w"> </span>odd<span class="w"> </span>number<span class="w"> </span>greater<span class="w"> </span>than<span class="w"> </span>or<span class="w"> </span>equal<span class="w"> </span>to<span class="w"> </span><span class="m">1</span><span class="w"> </span>based<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="nv">M</span><span class="o">=</span>2S+1<span class="w"> </span>rule.<span class="w"> </span>Examples:<span class="w"> </span><span class="m">1</span>,3,5,7,9,11,..
+</span></code></pre></div>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/multi/Example_5.png?raw=true#only-light" alt="Example_5.png" width="120"/>
+    <img src="Figures/view_ORCA_Manual/multi/Example_5_Dark.png?raw=true#only-dark" alt="Example_5.png" width="120"/>
+    <figcaption>Image of Benzylamion anion.</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-move_com-move-the-centre-of-mass-of-your-chemical-system"><code>viewORCA move_com</code>: Move the Centre-of-Mass of your Chemical System<a class="headerlink" href="#vieworca-move_com-move-the-centre-of-mass-of-your-chemical-system" title="Permanent link">&para;</a></h2>
+<p>This method is designed to move the centre of mass of a chemical system. </p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing the xyz files of the chemical systems you want to change the centre of masses of, and </li>
+<li>
+<p>type <code>viewORCA move_com filepath --move_centre_of_mass_to=move_centre_of_mass_to</code> into the terminal, where:</p>
+<ul>
+<li><code>filepath</code> is the path to the <code>xyz</code> file of your system, and </li>
+<li><code>--move_centre_of_mass_to</code> is the position you would like to move the centre of mass of your chemical system to. Make sure you give your coordicates as <code>x,y,z</code>, including commas between coordinates. If <code>--move_centre_of_mass_to</code> is not given, the default given is the origin <span class="arithmatex">\((0.0,0.0,0.0)\)</span>.</li>
+</ul>
+</li>
+</ol>
+<p>The output file will be saved as <code>filepath</code>, but with <code>move_centre_of_mass_to</code> saved in the filename. </p>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>Lets consider that you have a benzylamine molecule that you want to move its centre of mass to <span class="arithmatex">\((10.0,0.0,0.0)\)</span>. We perform the following in the terminal:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># First, change directory into the folder containing your xyz files you want to move the centre of mass of.</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_xyz_files
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># Second, run &quot;viewORCA move_com&quot;.</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>viewORCA<span class="w"> </span>move_com<span class="w"> </span>Benzylamine.xyz<span class="w"> </span>-c<span class="w"> </span><span class="m">10</span>.0,0.0,0.0
+</span></code></pre></div>
+<p>We will get a new file called <code>Benzylamine_com_10.0_0.0_0.0.xyz</code>, which is the benzylamine molecule but moved to <span class="arithmatex">\((10.0,0.0,0.0)\)</span>. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_move_com">Examples/viewORCA_move_com</a></p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/move_com/viewORCA_move_com.png?raw=true#only-light" alt="viewORCA_move_com.png" width="700"/>
+    <img src="Figures/view_ORCA_Manual/move_com/viewORCA_move_com_Dark.png?raw=true#only-dark" alt="viewORCA_move_com.png" width="700"/>
+    <figcaption>Image of Benzylamine before and after its centre of mass is moved.</figcaption>
+</figure></p>
+</details>
+<h2 id="vieworca-combine-combine-several-chemical-systems-together"><code>viewORCA Combine</code>: Combine Several Chemical Systems Together<a class="headerlink" href="#vieworca-combine-combine-several-chemical-systems-together" title="Permanent link">&para;</a></h2>
+<p>This method is designed to allow the user to easily combine multiple xyz files together into the same chemical system. </p>
+<p>To use this module:</p>
+<ol>
+<li>In the terminal, change directory into the directory containing the xyz files of the chemical systems you want to combine together. </li>
+<li>
+<p>type <code>viewORCA combine filepath_for_system_1 filepath_for_system_2 filepath_for_system_3 ...</code> into the terminal, where:</p>
+<ul>
+<li><code>filepath_for_system_1, filepath_for_system_2, ...</code> are the paths to all the xyz files you would like to combine together.  </li>
+</ul>
+</li>
+</ol>
+<details class="example" open="open">
+<summary>Example</summary>
+<p>Say we want to combine an <code>xyz</code> file containing a Cu(II)-benzylimine molecule (with centre of mass = <span class="arithmatex">\((0.0, 0.0, 0.0)\)</span>) with another <code>xyz</code> file containing a benylamine molecule (with centre of mass = <span class="arithmatex">\((10.0, 0.0, 0.0)\)</span>). We would run the code below to achieve this:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># First, change directory into the folder containing your xyz files you want to combine together. </span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nb">cd</span><span class="w"> </span>path_to_xyz_files
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># Second, run &quot;viewORCA move_com&quot;.</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>viewORCA<span class="w"> </span>combine<span class="w"> </span>Benzylamine_com_10.0_0.0_0.0.xyz<span class="w"> </span>Cu_II-BnzImine_1+_com_0_0_0.xyz
+</span></code></pre></div>
+<p><code>viewORCA combine</code> will print the shortest distances between the chemical system you combine together so you know they are a good distance from each other. If you see that any distance is less than 3.0 Å, you may have accidently merged your chemical systems together. </p>
+<p>You will also see a new file has been made called <code>overall_chemical_system.xyz</code> that contains your overall chemical system. This example is given in <a href="https://github.com/geoffreyweal/viewORCA/tree/main/Examples/viewORCA_combine">Examples/viewORCA_combine</a>. Make sure you check this file </p>
+<p><figure markdown="span">
+    <img src="Figures/view_ORCA_Manual/combine/combine.png?raw=true#only-light" alt="combine.png#only-light" width="1000"/>
+    <img src="Figures/view_ORCA_Manual/combine/combine_Dark.png?raw=true#only-dark" alt="combine.png#only-dark" width="1000"/>
+    <figcaption>Combining Benzylamine and Cu(II)-benzylimine into one xyz file.</figcaption>
+</figure></p>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="Installation.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Installation
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 <a href="https://github.com/geoffreyweal"  target="_blank" rel="noopener">Geoffrey Weal</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/geoffreyweal" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/vieworca" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/geoffreyweal" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/geoffrey-weal-905725196" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://orcid.org/0000-0002-3477-160X" target="_blank" rel="noopener" title="orcid.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M294.7 188.2h-45.9V342h47.5c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m-80.8 360.8h-29.8V161.3h29.8zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2M300 369h-81V161.3h80.6c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.code.select", "navigation.footer", "content.tooltips", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "toc.follow"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
